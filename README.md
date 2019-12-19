@@ -1,41 +1,30 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Sort Versions [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/sort-versions/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/sort-versions)
 
-My awesome module.
+Sort semver-compatible versions.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/sort-versions.png)](https://npmjs.com/package/sort-versions)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install sort-versions
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const sortVersions = require("sort-versions");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+sortVersions(["v1", "0.0", " v2a "]);
+//=> [ '2.0.0', '1.0.0', '0.0.0' ]
 ```
 
 ## API
 
-### theModule(input, options?)
+### sortVersions(versions)
 
-#### input
+#### versions
 
-Type: `string`
+Type: `array`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The versions to sort.

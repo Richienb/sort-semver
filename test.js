@@ -1,13 +1,6 @@
 import test from "ava"
-import theModule from "."
+import sortVersions from "."
 
 test("main", (t) => {
-    t.throws(() => {
-        theModule(123)
-    }, {
-        instanceOf: TypeError,
-        message: "Expected a string, got number",
-    })
-
-    t.is(theModule("unicorns"), "unicorns & rainbows")
+    t.deepEqual(sortVersions(["v1", "0.0", " v2a "]), ["2.0.0", "1.0.0", "0.0.0"])
 })

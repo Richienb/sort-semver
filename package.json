@@ -1,8 +1,8 @@
 {
-    "name": "the-module",
+    "name": "sort-versions",
     "version": "0.0.0",
-    "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
+    "description": "Sort semver-compatible versions.",
+    "repository": "https://github.com/Richienb/sort-versions.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "main": "index.js",
@@ -11,14 +11,21 @@
         "index.d.ts"
     ],
     "engines": {
-        "node": ">=8"
+        "node": ">=4"
     },
     "scripts": {
         "lint": "xo",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
-    "dependencies": {},
+    "keywords": [
+        "semver",
+        "version",
+        "sort"
+    ],
+    "dependencies": {
+        "clean-semver": "^1.0.0",
+        "semver": "^7.1.1"
+    },
     "devDependencies": {
         "ava": "^2.1.0",
         "eslint-config-richienb": "^0.2.3",
