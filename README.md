@@ -1,27 +1,27 @@
-# Sort Versions [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/sort-versions/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/sort-versions)
+# Sort Semver [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/sort-semver/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/sort-semver)
 
 Sort semver-compatible versions.
 
-[![NPM Badge](https://nodei.co/npm/sort-versions.png)](https://npmjs.com/package/sort-versions)
+[![NPM Badge](https://nodei.co/npm/sort-semver.png)](https://npmjs.com/package/sort-semver)
 
 ## Install
 
 ```sh
-npm install sort-versions
+npm install sort-semver
 ```
 
 ## Usage
 
 ```js
-const sortVersions = require("sort-versions");
+const sortSemver = require("sort-semver");
 
-sortVersions(["v1", "0.0", " v2a "]);
+sortSemver(["v1", "0.0", " v2a "]);
 //=> [ '2.0.0', '1.0.0', '0.0.0' ]
 ```
 
 ## API
 
-### sortVersions(versions)
+### sortSemver(versions)
 
 #### versions
 

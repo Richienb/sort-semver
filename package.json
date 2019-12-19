@@ -1,8 +1,8 @@
 {
-    "name": "sort-versions",
+    "name": "sort-semver",
     "version": "0.0.0",
     "description": "Sort semver-compatible versions.",
-    "repository": "https://github.com/Richienb/sort-versions.git",
+    "repository": "https://github.com/Richienb/sort-semver.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "main": "index.js",
