@@ -1,6 +1,6 @@
 {
     "name": "sort-semver",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Sort semver-compatible versions.",
     "repository": "https://github.com/Richienb/sort-semver.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
